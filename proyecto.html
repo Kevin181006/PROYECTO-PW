@@ -1,352 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Productos</title>
-   
-  
+    <title>Tienda Online</title>
 </head>
+
 <body>
-    <header>
-        <nav class="navegacion">
-            <div class="logotipo">ElectroHogar</div>
-           
-            <button class="menu-hamburguesa" id="menuHamburguesa">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-           
-            <ul class="enlaces-nav" id="enlacesNav">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#ofertas">Ofertas</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-           
-            <div class="iconos-nav">
-                <button class="btn-icono">🔍</button>
-                <button class="btn-icono">❤️</button>
-                <button class="btn-icono">
-                    🛒
-                    <span class="contador-carrito">3</span>
-                </button>
-            </div>
-        </nav>
-    </header>
- 
-    <section class="seccion-principal">
-        <h1>Descubre Nuestros Productos</h1>
-        <p>Encuentra los mejores productos al mejor precio</p>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<aside>
+    <h2>Filtros</h2>
+    <ul>
+        <li><a href="#">Categoría 1</a></li>
+        <li><a href="#">Categoría 2</a></li>
+        <li><a href="#">Categoría 3</a></li>
+        <li><a href="#">Ofertas</a></li>
+    </ul>
+</aside>
+
+<main>
+
+    <section id="inicio">
+        <h1>ElectroHogar</h1>
+        <p>Explora nuestros productos destacados</p>
     </section>
- 
-    <div class="contenedor">
-        <div class="seccion-filtros">
-           
-            <aside class="filtros">
-                <div class="grupo-filtro">
-                    <h3>Categorías</h3>
-                    <div class="opcion-filtro">
-                        <input type="checkbox" id="cat1">
-                        <label for="cat1">Electrónica</label>
-                    </div>
-                    <div class="opcion-filtro">
-                        <input type="checkbox" id="cat2">
-                        <label for="cat2">Ropa</label>
-                    </div>
-                    <div class="opcion-filtro">
-                        <input type="checkbox" id="cat3">
-                        <label for="cat3">Hogar</label>
-                    </div>
-                    <div class="opcion-filtro">
-                        <input type="checkbox" id="cat4">
-                        <label for="cat4">Deportes</label>
-                    </div>
-                    <div class="opcion-filtro">
-                        <input type="checkbox" id="cat5">
-                        <label for="cat5">Libros</label>
-                    </div>
-                </div>
- 
-                <div class="grupo-filtro">
-                    <h3>Precio</h3>
-                    <div class="rango-precio">
-                        <input type="number" placeholder="Mín" min="0">
-                        <span>-</span>
-                        <input type="number" placeholder="Máx" min="0">
-                    </div>
-                </div>
- 
-                <div class="grupo-filtro">
-                    <h3>Calificación</h3>
-                    <div class="opcion-filtro">
-                        <input type="checkbox" id="star5">
-                        <label for="star5">
-                            <span class="estrellas" data-rating="5">★★★★★</span>
-                        </label>
-                    </div>
-                    <div class="opcion-filtro">
-                        <input type="checkbox" id="star4">
-                        <label for="star4">
-                            <span class="estrellas" data-rating="4">★★★★☆</span> y más
-                        </label>
-                    </div>
-                    <div class="opcion-filtro">
-                        <input type="checkbox" id="star3">
-                        <label for="star3">
-                            <span class="estrellas" data-rating="3">★★★☆☆</span> y más
-                        </label>
-                    </div>
-                </div>
- 
-                <div class="grupo-filtro">
-                    <h3>Disponibilidad</h3>
-                    <div class="opcion-filtro">
-                        <input type="checkbox" id="stock">
-                        <label for="stock">En inventario</label>
-                    </div>
-                    <div class="opcion-filtro">
-                        <input type="checkbox" id="sale">
-                        <label for="sale">En oferta</label>
-                    </div>
-                </div>
-            </aside>
- 
-            <section class="seccion-productos">
-                <div class="encabezado-productos">
-                    <span class="contador-productos">Mostrando 8 productos</span>
-                    <select class="seleccion-orden">
-                        <option>Más relevantes</option>
-                        <option>Precio: Menor a Mayor</option>
-                        <option>Precio: Mayor a Menor</option>
-                        <option>Mejor calificados</option>
-                        <option>Más vendidos</option>
-                    </select>
-                </div>
- 
-                <div class="malla-productos">
-                   
-                    <article class="tarjeta-producto">
-                        <div class="imagen-producto">
-                            📱
-                            <span class="etiqueta nuevo">NUEVO</span>
-                        </div>
-                        <div class="info-producto">
-                            <div class="categoria-producto">Electrónica</div>
-                            <h3 class="titulo-producto">Smartphone Pro Max</h3>
-                            <div class="calificacion-producto">
-                                <span class="estrellas" data-rating="5">★★★★★</span>
-                                <span class="contador-calif">(128)</span>
-                            </div>
-                            <div class="precio-producto">
-                                <span class="precio-actual">$799</span>
-                                <span class="precio-original">$999</span>
-                            </div>
-                            <button class="agregar-al-carrito">Añadir al Carrito</button>
-                        </div>
-                    </article>
- 
-                    <article class="tarjeta-producto">
-                        <div class="imagen-producto">
-                            💻
-                        </div>
-                        <div class="info-producto">
-                            <div class="categoria-producto">Electrónica</div>
-                            <h3 class="titulo-producto">Laptop Ultra Delgada</h3>
-                            <div class="calificacion-producto">
-                                <span class="estrellas" data-rating="4">★★★★☆</span>
-                                <span class="contador-calif">(95)</span>
-                            </div>
-                            <div class="precio-producto">
-                                <span class="precio-actual">$1,299</span>
-                            </div>
-                            <button class="agregar-al-carrito">Añadir al Carrito</button>
-                        </div>
-                    </article>
- 
-                    <article class="tarjeta-producto">
-                        <div class="imagen-producto">
-                            🎧
-                            <span class="etiqueta">-30%</span>
-                        </div>
-                        <div class="info-producto">
-                            <div class="categoria-producto">Electrónica</div>
-                            <h3 class="titulo-producto">Audífonos Inalámbricos</h3>
-                            <div class="calificacion-producto">
-                                <span class="estrellas" data-rating="5">★★★★★</span>
-                                <span class="contador-calif">(256)</span>
-                            </div>
-                            <div class="precio-producto">
-                                <span class="precio-actual">$199</span>
-                                <span class="precio-original">$299</span>
-                            </div>
-                            <button class="agregar-al-carrito">Añadir al Carrito</button>
-                        </div>
-                    </article>
- 
-                    <article class="tarjeta-producto">
-                        <div class="imagen-producto">
-                            ⌚
-                        </div>
-                        <div class="info-producto">
-                            <div class="categoria-producto">Electrónica</div>
-                            <h3 class="titulo-producto">Smartwatch Premium</h3>
-                            <div class="calificacion-producto">
-                                <span class="estrellas" data-rating="4">★★★★☆</span>
-                                <span class="contador-calif">(187)</span>
-                            </div>
-                            <div class="precio-producto">
-                                <span class="precio-actual">$399</span>
-                            </div>
-                            <button class="agregar-al-carrito">Añadir al Carrito</button>
-                        </div>
-                    </article>
- 
-                    <article class="tarjeta-producto">
-                        <div class="imagen-producto">
-                            👕
-                            <span class="etiqueta nuevo">NUEVO</span>
-                        </div>
-                        <div class="info-producto">
-                            <div class="categoria-producto">Ropa</div>
-                            <h3 class="titulo-producto">Camiseta Deportiva</h3>
-                            <div class="calificacion-producto">
-                                <span class="estrellas" data-rating="5">★★★★★</span>
-                                <span class="contador-calif">(342)</span>
-                            </div>
-                            <div class="precio-producto">
-                                <span class="precio-actual">$29</span>
-                            </div>
-                            <button class="agregar-al-carrito">Añadir al Carrito</button>
-                        </div>
-                    </article>
- 
-                    <article class="tarjeta-producto">
-                        <div class="imagen-producto">
-                            👟
-                        </div>
-                        <div class="info-producto">
-                            <div class="categoria-producto">Deportes</div>
-                            <h3 class="titulo-producto">Zapatillas Running</h3>
-                            <div class="calificacion-producto">
-                                <span class="estrellas" data-rating="5">★★★★★</span>
-                                <span class="contador-calif">(521)</span>
-                            </div>
-                            <div class="precio-producto">
-                                <span class="precio-actual">$129</span>
-                                <span class="precio-original">$159</span>
-                            </div>
-                            <button class="agregar-al-carrito">Añadir al Carrito</button>
-                        </div>
-                    </article>
- 
-                    <article class="tarjeta-producto">
-                        <div class="imagen-producto">
-                            📚
-                        </div>
-                        <div class="info-producto">
-                            <div class="categoria-producto">Libros</div>
-                            <h3 class="titulo-producto">Bestseller del Año</h3>
-                            <div class="calificacion-producto">
-                                <span class="estrellas" data-rating="5">★★★★★</span>
-                                <span class="contador-calif">(1,024)</span>
-                            </div>
-                            <div class="precio-producto">
-                                <span class="precio-actual">$24</span>
-                            </div>
-                            <button class="agregar-al-carrito">Añadir al Carrito</button>
-                        </div>
-                    </article>
- 
-                    <article class="tarjeta-producto">
-                        <div class="imagen-producto">
-                            🏠
-                            <span class="etiqueta">-20%</span>
-                        </div>
-                        <div class="info-producto">
-                            <div class="categoria-producto">Hogar</div>
-                            <h3 class="titulo-producto">Lámpara Inteligente</h3>
-                            <div class="calificacion-producto">
-                                <span class="estrellas" data-rating="4">★★★★☆</span>
-                                <span class="contador-calif">(78)</span>
-                            </div>
-                            <div class="precio-producto">
-                                <span class="precio-actual">$59</span>
-                                <span class="precio-original">$79</span>
-                            </div>
-                            <button class="agregar-al-carrito">Añadir al Carrito</button>
-                        </div>
-                    </article>
-                   
-                </div>
- 
-                <nav class="paginacion">
-                    <button class="btn-pagina">← Anterior</button>
-                    <button class="btn-pagina activo">1</button>
-                    <button class="btn-pagina">2</button>
-                    <button class="btn-pagina">3</button>
-                    <button class="btn-pagina">4</button>
-                    <button class="btn-pagina">Siguiente →</button>
-                </nav>
-            </section>
+
+    <section id="productos">
+
+        <div>
+            <span>Mostrando 8 productos</span>
+            <select>
+                <option>Más relevantes</option>
+                <option>Precio: Menor a Mayor</option>
+                <option>Precio: Mayor a Menor</option>
+                <option>Más vendidos</option>
+            </select>
         </div>
-    </div>
- 
-    <footer>
-        <div class="contenido-pie">
-            <div class="seccion-pie">
-                <h3>Acerca de</h3>
-                <ul>
-                    <li><a href="#">Quiénes Somos</a></li>
-                    <li><a href="#">Carreras</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Prensa</a></li>
-                </ul>
+
+        <div>
+
+            <div>
+                <img src="dl5_Galaxy-A54-5G_Awesome-Graphite_Front-e1683749755408.jpg" alt="Producto 1">
+                <div>
+                    <h3>Producto 1</h3>
+                    <span>★★★★☆</span> <p>Precio anterior: $25.00</p>
+                    <p>Precio actual: $20.00</p>
+                    <button>Agregar al carrito</button>
+                </div>
             </div>
-            <div class="seccion-pie">
-                <h3>Ayuda</h3>
-                <ul>
-                    <li><a href="#">Preguntas Frecuentes</a></li>
-                    <li><a href="#">Envíos</a></li>
-                    <li><a href="#">Devoluciones</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
+
+            <div>
+                <img src="https://picsum.photos/301" alt="Producto 2">
+                <div>
+                    <h3>Producto 2</h3>
+                    <span>★★★★★</span> <p>Precio anterior: $30.00</p>
+                    <p>Precio actual: $25.00</p>
+                    <button>Agregar al carrito</button>
+                </div>
             </div>
-            <div class="seccion-pie">
-                <h3>Categorías</h3>
-                <ul>
-                    <li><a href="#">Electrónica</a></li>
-                    <li><a href="#">Ropa</a></li>
-                    <li><a href="#">Hogar</a></li>
-                    <li><a href="#">Deportes</a></li>
-                </ul>
+
+            <div>
+                <img src="https://picsum.photos/302" alt="Producto 3">
+                <div>
+                    <h3>Producto 3</h3>
+                    <span>★★★☆☆</span> <p>Precio anterior: $20.00</p>
+                    <p>Precio actual: $15.00</p>
+                    <button>Agregar al carrito</button>
+                </div>
             </div>
-            <div class="seccion-pie">
-                <h3>Síguenos</h3>
-                <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">YouTube</a></li>
-                </ul>
+
+            <div>
+                <img src="https://picsum.photos/303" alt="Producto 4">
+                <div>
+                    <h3>Producto 4</h3>
+                    <span>★★★★☆</span> <p>Precio anterior: $40.00</p>
+                    <p>Precio actual: $30.00</p>
+                    <button>Agregar al carrito</button>
+                </div>
             </div>
+
+            <div>
+                <img src="https://picsum.photos/304" alt="Producto 5">
+                <div>
+                    <h3>Producto 5</h3>
+                    <span>★★★★★</span> <p>Precio anterior: $22.00</p>
+                    <p>Precio actual: $18.00</p>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div>
+                <img src="https://picsum.photos/305" alt="Producto 6">
+                <div>
+                    <h3>Producto 6</h3>
+                    <span>★★★★☆</span> <p>Precio anterior: $28.00</p>
+                    <p>Precio actual: $22.00</p>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div>
+                <img src="https://picsum.photos/306" alt="Producto 7">
+                <div>
+                    <h3>Producto 7</h3>
+                    <span>★★★☆☆</span> <p>Precio anterior: $35.00</p>
+                    <p>Precio actual: $28.00</p>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div>
+                <img src="https://picsum.photos/307" alt="Producto 8">
+                <div>
+                    <h3>Producto 8</h3>
+                    <span>★★★★★</span> <p>Precio anterior: $15.00</p>
+                    <p>Precio actual: $12.00</p>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Tienda Online. Todos los derechos reservados.</p>
+
+        <div>
+            <h3>Producto Especial</h3>
+            <span>★★★★★</span>
+            <p>Precio anterior: $30.00</p>
+            <p>Precio actual: $22.00</p>
+            <button>Agregar al carrito</button>
         </div>
-    </footer>
- 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const hamburger = document.getElementById('menuHamburguesa');
-            const navLinks = document.getElementById('enlacesNav');
- 
-            hamburger.addEventListener('click', () => {
-                navLinks.classList.toggle('activo');
-            });
-        });
-    </script>
-   
+
+        <nav>
+            <button>← Anterior</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>Siguiente →</button>
+        </nav>
+
+    </section>
+
+</main>
+
+<footer id="contacto">
+    <p>Contacto: tienda@example.com</p>
+    <p>Todos los derechos reservados</p>
+</footer>
+
 </body>
 </html>
